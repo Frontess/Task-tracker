@@ -1,0 +1,126 @@
+/* Общий стиль приложения */
+.app-container {
+  font-family: "Inter", sans-serif;
+  margin: 20px;
+  padding: 10px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для формы добавления задач */
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.add-task input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.add-task button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task button:hover {
+  background-color: #45a049;
+}
+
+/* Стили для списка задач */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  font-size: 14px; /* Универсальный размер */
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: gray;
+  background-color: #e0e0e0;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.task-item:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .add-task input {
+    font-size: 14px;
+  }
+
+  .add-task button {
+    font-size: 14px;
+  }
+
+  .task-item {
+    font-size: 14px;
+  }
+}
+
+/* приветствие */
+.welcome-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4caf50;
+  color: white;
+  font-family: "Inter", sans-serif;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
