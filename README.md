@@ -25,7 +25,7 @@
 1. Клонируйте репозиторий проекта:
 
    ```bash
-   git clone https://github.com/your-username/task-tracker.git
+   git clone https://github.com/Frontess/task-tracker.git
 
    ```
 
