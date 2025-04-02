@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Task Tracker - ToDo приложение для управления списком задач.",
   "private": true,
-  "homepage": "https://Frontess.github.io/task-tracker",
+  "homepage": "https://Frontess.github.io/task-tracker/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
